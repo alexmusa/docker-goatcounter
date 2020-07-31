@@ -6,7 +6,6 @@ declare OPTS=""
 
 OPTS="$OPTS -listen $GOATCOUNTER_LISTEN"
 OPTS="$OPTS -tls none"
-OPTS="$OPTS -auth email:$GOATCOUNTER_EMAIL"
 OPTS="$OPTS -db $GOATCOUNTER_DB"
 
 if [ -n "$GOATCOUNTER_SMTP" ]; then

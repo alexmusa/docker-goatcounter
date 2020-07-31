@@ -15,6 +15,7 @@ create_site ()
   goatcounter create \
     -domain "$GOATCOUNTER_DOMAIN" \
     -email "$GOATCOUNTER_EMAIL" \
+    -password "$GOATCOUNTER_PASSWORD" \
     -db "$GOATCOUNTER_DB"
 }
 

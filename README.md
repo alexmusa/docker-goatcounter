@@ -25,7 +25,11 @@ This mandatory environment variable is used to create the initial site.
 
 This mandatory environment variable defines the e-mail address of the admin user.  
 
-It's used to create the initial site and is passed as an `-auth` option to the `serve` command.
+It's used to create the initial site and is passed as an `-email-from` option to the `serve` command.
+
+### `GOATCOUNTER_PASSWORD`
+
+ Password to log in; will be asked interactively if omitted. It is mandatory to create the initial site if the container is running detached.
 
 ### `GOATCOUNTER_SMTP`
 
@@ -42,6 +46,12 @@ It's possible to use the Postgres DB however, the image was not tested against i
 Don't change this value unless you know what you're doing.
 
 _Default:_ `sqlite:///goatcounter/db/goatconter.sqlite3`
+
+### `GOATCOUNTER_LISTEN`
+
+This optional environment variable defines the address to listen on.
+
+_Default:_ `0.0.0.0:8080`
 
 ## Troubleshooting
 

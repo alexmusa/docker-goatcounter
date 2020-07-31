@@ -13,7 +13,6 @@ WORKDIR /goatcounter
 
 ENV GOATCOUNTER_LISTEN '0.0.0.0:8080'
 ENV GOATCOUNTER_DB 'sqlite:///goatcounter/db/goatcounter.sqlite3'
-ENV GOATCOUNTER_SMTP 'stdout'
 
 RUN apt-get update \
   && apt-get install -y ca-certificates \
